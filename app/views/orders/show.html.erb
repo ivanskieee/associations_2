@@ -1,0 +1,9 @@
+<h1>Order Details</h1>
+
+<p><strong>Order ID:</strong> <%= @order.id %></p>
+<p><strong>Products:</strong></p>
+<ul>
+  <% @order.products.each do |product| %>
+    <li><%= product.name %> - $<%= product.price %></li>
+  <% end %>
+</ul>
